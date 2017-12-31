@@ -1,5 +1,8 @@
 import discord
 from discord.ext import commands
+import warframe
+
+print(warframe.find_url('Cool'))
 
 bot = commands.Bot(command_prefix='!',
                    description='Warframe market price checker')

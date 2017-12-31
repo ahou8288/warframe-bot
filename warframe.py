@@ -58,10 +58,11 @@ def display_array(arr, label):
     print('Median : {}'.format(median(arr)))
     print('')
 
-input_text = 'Cool'
-string_search =find_url(input_text)
-data = item_lookup(string_search[2])
-bought, sold = get_totals(data['payload']['orders'])
-print('\nItem data: {}'.format(string_search[1]))
-display_array(sold, 'Sold')
-display_array(bought, 'Buy')
+if __name__=='main':
+    input_text = 'Cool'
+    string_search =find_url(input_text)
+    data = item_lookup(string_search[2])
+    bought, sold = get_totals(data['payload']['orders'])
+    print('\nItem data: {}'.format(string_search[1]))
+    display_array(sold, 'Sold')
+    display_array(bought, 'Buy')
